@@ -1,0 +1,545 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+head{
+    font-family: 'Dancing Script', cursiva;
+}
+.header {
+    position:fixed;
+    top: 0%;
+    width: 100%;
+  }
+  main{
+      margin-bottom: 80px;
+  }
+    //estilo carousel/
+.carousel-inner{
+    width: 100%;
+    .car__1{
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-size: 600px;
+       } 
+       .car__2{
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+       }   
+       .car__3{
+        width: 100%;
+        height: 600px;
+        background-position: center;
+        background-size: cover;
+       }
+       .color-teal color-brown color-yellow{
+        width: 100%;
+        height: 700px;
+    
+      }
+     
+      $colores:teal,brown,yellow;
+    
+     @each $color in $colores{
+      .color-#{$color}{  
+      background-color:$color;
+      background-size: cover;
+      background-position: center;
+    
+      }
+        
+    }
+   }
+    
+     /*finalizo de estilar carusel */
+     .titulo {
+        color: orangered;
+        font-family: 'Dancing Script', cursiva;
+        font-size: 2em;
+        text-align: center;
+        z-index: 5;
+        margin-top: 150px;
+        text-shadow: 5px 5px 5px cornflowerblue ;
+        animation-duration: 3s;
+        animation-name: aparecer;
+        animation-delay: 3s;
+        animation-duration: alternate;
+        animation-iteration-count: infinite;
+        } 
+        @keyframes aparecer{
+            0%{
+                opacity:0 ;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+        /*estilo nav*/
+        .nav{
+            text-transform: capitalize;
+            margin: 2em;
+            position: fixed;
+            .btn{
+                border: none;
+                border-radius: 2px;
+                padding: 0.7em 1.5em;
+                cursor: pointer;
+                font-size: 1.5rem;
+                font-weight: lighter;
+            }
+                  .btn:hover{
+                  transform: scale(0.5)
+                  }
+                 
+                 .btn-principal{
+                  @extend.btn;
+                 color: brown;
+                 background-color: cornflowerblue;
+                 }
+        }
+              .background--color{
+              background-image: url(img/madera2.gif);
+              width: 100%;
+              height: 40%;
+           }
+       
+
+        video{
+            background-position: center;
+        }
+              
+    
+     /*finalizo de estilar nav*/
+     iframe
+     {
+        position: relative;;
+        margin-top: 100px;
+        margin-left: 30%;
+     }
+     /*comienzo uso de mixin*/
+     @mixin contenedor 
+     ($widht,$height,$justify,$center,$columns)
+     {
+      display:grid;
+      width: $widht;
+      height:$height;
+      justify-content:$justify;
+      align-items: $center;
+      grid-template-columns: $columns;
+      
+     }
+     @mixin item ($widht,$height,$bsize,$padding,$justify,$align,$line,$shadow)
+     {
+         width: $widht;
+         height:$height;
+         background-size: cover;
+         padding: $padding;
+         justify-content: $justify;
+         align-items: $align;
+         line-height: $line;
+         box-shadow: $shadow;
+     }
+ 
+    
+     .itemellas:hover
+     {
+        transform: scale(1.2);
+        transition: 08s;
+        filter: sepia(2);
+     }
+     
+     .contenedor{
+         @include contenedor(100%,400px,space-evenly,center,1fr 1fr 1fr);
+         background-color: darkgoldenrod;
+     .itemellas{
+        @include item(100%,400px,cover,20px,space-between,center,400px,5px 5px 5px 5px )
+         
+        } 
+        
+     }
+     /*finalizo contenedor seccion ellas*/
+    .contenedorellos{
+        @include contenedor(100%,400px ,center ,center,1fr 1fr 1fr);
+        background-color:lightslategray;
+         
+        .itemellos{
+           
+            @include item(100%,400px,cover,20px,space-between,center,400px,5px 5px 5px 5px );
+         } 
+
+        }  
+            .rounded-circle:hover
+            {
+               transform: scale(1.2);
+               transition: 08s;
+               filter: sepia(2);        
+        } 
+    
+    
+/*finalizo contenedor ellos*/
+.contenedorpeques{
+    @include contenedor(100%,400px ,center ,center,1fr 1fr 1fr);
+    background-color:brown;
+     
+    .itempeques{
+       
+        @include item(100%,400px,cover,20px,space-between,center,400px,5px 5px 5px 5px );
+     } 
+
+    }  
+        .itempeques:hover
+        {
+           transform: scale(1.2);
+           transition: 08s;
+           filter: sepia(2);        
+    } 
+
+//finalizo contenedor peques
+.contenedormascotas{
+    @include contenedor(100%,400px ,center ,center,1fr 1fr 1fr);
+    background-color:cadetblue;
+     
+    .itemmascotas{
+       
+        @include item(100%,400px,cover,20px,space-between,center,400px,5px 5px 5px 5px );
+     } 
+
+    }  
+        .itemmascotas:hover
+        {
+           transform: scale(1.2);
+           transition: 08s;
+           filter: sepia(2);        
+    } 
+ //finalizo contenedor mascotas
+ //comienzo contenedor pasarela
+ .contenedorpasarela{
+    @include contenedor(100%,400px ,center ,center,1fr 1fr 1fr);
+    background-color:burlywood;
+     
+    .itempasarela{
+       
+        @include item(100%,400px,cover,20px,space-between,center,400px,5px 5px 5px 5px );
+     } 
+
+    }  
+        .itempasarela:hover
+        {
+           transform: scale(1.2);
+           transition: 08s;
+           filter: sepia(2);        
+    } 
+    $largo:200px;
+    $estrecho:100%;
+
+    @mixin subtitulos ($color,$height,$widht,)
+    {
+      color: $color; 
+      height:$largo;
+      width: $estrecho; 
+    } 
+    //estilos subtitulos  
+    .subtitulo{
+        @include subtitulos(maroon,$largo,$estrecho );
+        background-image:url(img/madera2.gif) ;
+        background-size: contain;
+        background-position: center;
+        text-align:center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size:30px;
+        font-family: 'Benne', serif;
+        text-transform: capitalize;
+        line-height: 150%;
+        letter-spacing: normal;
+        word-spacing: 1px;
+        text-decoration:none;
+        padding-left: 10px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    h2{
+        @include subtitulos(maroon,$largo,$estrecho );
+        background-color: cadetblue;
+        text-align:center;
+        font-weight: bold;
+        margin-bottom: 50px;
+        font-size:30px;
+        font-family: 'Benne', serif;
+        text-transform: capitalize;
+        line-height: 150%;
+        letter-spacing: normal;
+        word-spacing: 1px;
+        text-decoration:none;
+        padding-left: 10px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+
+    }
+    p {
+        text-align:center;
+         font-weight: bold;
+         font-size:16px ;
+         font-family: 'Benne', serif;
+         text-transform: capitalize;
+         line-height: 150%;
+         letter-spacing: normal;
+         word-spacing: 1px;
+         text-decoration:none;
+         margin: 100px 10px;
+         order:1;
+      }
+ /*comienzo a estilar paginas secundarias*/
+ .fondo{
+    height: auto;
+    width: 80%;
+    margin: auto;
+    padding: auto;
+    display: grid;
+    border: 2px blanchedalmond;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to left blue,lightblue );
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap:20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+  
+  }
+  
+  .contenedores
+  {
+    width: 100%;
+    height: 500px;
+    line-height: 500px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    box-shadow: 5px 5px 5px 5px;  
+  }
+  
+ 
+ 
+  
+       /*comienzo A estIlar seccion quienes somos*/
+       
+.box__uno {
+    width: 45%;
+    height: 50%;
+    background-color: brown;
+    border-radius: 4px;
+    float: right;
+  }
+  
+  .box__dos {
+    width: 45%;
+    height: 50%;
+    background-color: aquamarine;
+    border-radius: 4px;
+    float: left;
+  }
+  /*finalizo de estIlar seccion quienes somos*/
+ /*comienzo a estilar aanimaciones de descuento*/
+ .circle{
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    line-height: 300px;
+    font-size: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: 2px solid #000;
+    border-radius: 150px;
+    margin: auto;
+    background-image: radial-gradient( yellow 5%, orange 50%, red );
+    animation-name: rebotar;
+    animation-duration: 10s;
+    animation-iteration-count:infinite ;
+    background-image: url(img/descuento1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: red;
+ }
+ @keyframes rebotar{
+  0%{
+      opacity: 0;
+  }
+  1%{
+      transform: translateY(150px);
+      box-shadow: 0px 10px 10px 10px #000;
+  }
+  
+  10%{
+      opacity: 1;
+      transform: translateY(150px);
+  }
+  11%{
+      box-shadow: 0px 10px 10px 10px #000;
+  }
+  20%{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+  21%{
+      box-shadow: none;
+  }
+  30%{
+      opacity: 1;
+      transform: translateY(150px);
+  }
+  31%{
+      box-shadow: 0px 10px 10px 10px #000;
+  }
+  40%{
+      opacity: 1;
+      transform: translateY(0px);
+      box-shadow: none;
+  }
+  50%{
+      opacity: 1;
+      transform: translateY(150px);
+      box-shadow: 0px 10px 10px 10px #000;
+  }
+  60%{
+      opacity: 1;
+      transform: translateY(0px);
+      box-shadow: none;
+  }
+  70%{
+      opacity: 1;
+      transform: translateY(150px);
+      box-shadow: 0px 10px 10px 10px #000;
+  }
+  80%{
+      opacity: 1;
+      transform: translateY(50px);
+      box-shadow: none;
+  }
+  90%{
+      opacity: 1;
+      transform: translateY(130px);
+      box-shadow: none;
+      transform: rotate(-280deg);
+  }
+  
+  100%{
+      transform: rotate(-560deg);
+      transform: translate(10px, 150px);
+      box-shadow: 0px 10px 10px 10px #000;
+  }
+}
+.itemmujer:hover
+{
+   transform: scale(1.2);
+   transition: 08s;
+   filter: sepia(2);
+}
+
+.circle2{
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  line-height: 300px;
+  border: 2px solid #000;
+  border-radius: 150px;
+  background-image: url(img/descuento3.jpg);
+  background-position: center;
+  background-size: cover;
+  animation-name: descuento;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+
+}
+@keyframes descuento {
+ 
+  0%{
+    font-size: 150px;
+ 
+  }
+  25%{
+    font-size: 180px;
+    transform: rotate(360deg);
+  }
+  75%{
+    font-size: 150px;
+    transform: translatex(1000px);
+  }
+  100%{
+    font-size: 180px;
+    transform: rotate(360deg);
+  }
+}
+//comienzo a estilar footer//
+footer{
+    
+    background-image: url(img/madera2.gif);
+    text-align:center;
+
+       a{
+    text-align:center;
+    font-weight: bold;
+    font-size:16px ;
+    font-family:Kirang Haerang;
+    text-transform: capitalize;
+    line-height: 150%;
+    letter-spacing: 1em; ;
+    word-spacing: 1px;
+    text-decoration:none
+ }
+}
+/*finalizo de animaciones de descuento*/
+ /*estilo pagina 404*/
+.Error{
+background-color: darkgoldenrod;
+place-items:center;
+width:100%;
+height: 100vh;
+text-transform: uppercase;
+color:cornflowerblue;
+ h1{
+   font-size: 100px;
+
+ }
+ h2:hover{
+   cursor: pointer;
+   color:darkblue
+
+
+ }
+}
+ /*finalizo estilo pagina 404*/       
+ @media only screen and (min-width:
+ 360px) {
+     body {background-color:cadetblue}
+.fondo{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+}
+
+iframe {
+overflow: hidden;
+}
+
+  }
+ @media only screen and (min-width:
+ 1024px) {
+     body {background-color:beige}
+     .fondo{
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-template-rows: 1fr 1fr;
+      
+     
+     }
+   }    
+
