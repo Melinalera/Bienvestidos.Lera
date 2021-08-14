@@ -10,7 +10,8 @@ head {
 }
 
 .header {
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
   top: 0%;
   width: 100%;
 }
@@ -110,7 +111,8 @@ main {
 .nav {
   text-transform: capitalize;
   margin: 2em;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .nav .btn, .nav .btn-principal {
@@ -144,9 +146,9 @@ video {
 
 /*finalizo de estilar nav*/
 iframe {
+  width: 100%;
   position: relative;
-  margin-top: 100px;
-  margin-left: 30%;
+  background-position: center;
 }
 
 /*comienzo uso de mixin*/
@@ -769,6 +771,18 @@ footer a {
   text-decoration: none;
 }
 
+/*estilo pagina de contacto*/
+.header {
+  color: #36A0FF;
+  font-size: 27px;
+  padding: 10px;
+}
+
+.bigicon {
+  font-size: 35px;
+  color: #36A0FF;
+}
+
 /*finalizo de animaciones de descuento*/
 /*estilo pagina 404*/
 .Error {
@@ -787,6 +801,62 @@ footer a {
 .Error h2:hover {
   cursor: pointer;
   color: darkblue;
+}
+
+.accordion-flushbackground-color {
+  background-image: url(img/madera2.gif);
+}
+
+.trabajo {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.pensalo {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 400px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+}
+
+.pensalo p {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.pensalo img {
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.accordion-flush {
+  width: 60%;
+  position: relative;
+  background-position: center;
+  margin-left: 21%;
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 5px 5px;
+          box-shadow: 5px 5px 5px 5px;
+  font-size: 18px;
+  font-weight: bold;
+  color: cadetblue;
+  font-family: cursive;
+  text-transform: capitalize;
 }
 
 /*finalizo estilo pagina 404*/
