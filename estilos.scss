@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2? family=Dancing+Script:wght@500&display=swap');
 *{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+ margin: 0%;
+ padding: 0%;
+ box-sizing: border-box;
 
 }
 head{
@@ -13,10 +14,13 @@ head{
     width: 100%;
   }
   main{
+      width: 100%;
       margin-bottom: 80px;
+      ;
   }
     //estilo carousel/
 .carousel-inner{
+    margin-bottom: 90px;
     width: 100%;
     .car__1{
         width: 100%;
@@ -28,13 +32,13 @@ head{
         width: 100%;
         height: 600px;
         background-position: center;
-        background-size: cover;
+        background-size: 600px;
        }   
        .car__3{
         width: 100%;
         height: 600px;
         background-position: center;
-        background-size: cover;
+        background-size: 600px;
        }
        .color-teal color-brown color-yellow{
         width: 100%;
@@ -58,7 +62,7 @@ head{
      /*finalizo de estilar carusel */
      .titulo {
         color: orangered;
-        font-family: 'Dancing Script', cursiva;
+        font-family:'Dancing Script', cursiva;
         font-size: 2em;
         text-align: center;
         z-index: 5;
@@ -80,11 +84,19 @@ head{
         }
 
         /*estilo nav*/
-        .nav{
+        .navbar{
             text-transform: capitalize;
             margin: 2em;
             position: sticky;
+            
             .btn{
+                margin-left: 1em;
+                margin-right: 1em;
+                color: cadetblue;
+                font-size: 18px;
+                font-weight: bold;
+                font-family:cursive;
+                text-transform: capitalize;  
                 border: none;
                 border-radius: 2px;
                 padding: 0.7em 1.5em;
@@ -93,13 +105,13 @@ head{
                 font-weight: lighter;
             }
                   .btn:hover{
-                  transform: scale(0.5)
+                  transform: scale(0.5);
+                  color: matrix(brown)
                   }
                  
-                 .btn-principal{
-                  @extend.btn;
-                 color: brown;
-                 background-color: cornflowerblue;
+                 .btn-outline-success{
+                  @extend .btn;
+               
                  }
         }
               .background--color{
@@ -249,8 +261,7 @@ head{
     .subtitulo{
         @include subtitulos(maroon,$largo,$estrecho );
         background-image:url(img/madera2.gif) ;
-        background-size: contain;
-        background-position: center;
+        background-position:center;
         text-align:center;
         font-weight: bold;
         margin-bottom: 50px;
@@ -548,10 +559,11 @@ color:cornflowerblue;
  .pensalo{
      @include trabajo(100%,400px ,space-evenly );
      grid-template-columns: 1fr 1fr;
-    p{ 
+    
+    p{ margin-bottom: 200px;
         grid-column-start: 1;
         grid-column-end: 2;
-       
+    
     }
     img {
         grid-column-start: 2;
@@ -569,8 +581,7 @@ color:cornflowerblue;
     font-weight: bold;
     color:cadetblue;
     font-family:cursive;
-    text-transform: capitalize;
-    
+    text-transform: capitalize;  
 }
  /*finalizo estilo pagina 404*/       
  @media only screen and (min-width:

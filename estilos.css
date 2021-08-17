@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2? family=Dancing+Script:wght@500&display=swap");
 * {
   margin: 0%;
   padding: 0%;
@@ -17,10 +18,12 @@ head {
 }
 
 main {
+  width: 100%;
   margin-bottom: 80px;
 }
 
 .carousel-inner {
+  margin-bottom: 90px;
   width: 100%;
 }
 
@@ -35,14 +38,14 @@ main {
   width: 100%;
   height: 600px;
   background-position: center;
-  background-size: cover;
+  background-size: 600px;
 }
 
 .carousel-inner .car__3 {
   width: 100%;
   height: 600px;
   background-position: center;
-  background-size: cover;
+  background-size: 600px;
 }
 
 .carousel-inner .color-teal color-brown color-yellow {
@@ -108,14 +111,21 @@ main {
 }
 
 /*estilo nav*/
-.nav {
+.navbar {
   text-transform: capitalize;
   margin: 2em;
   position: -webkit-sticky;
   position: sticky;
 }
 
-.nav .btn, .nav .btn-principal {
+.navbar .btn, .navbar .btn-outline-success {
+  margin-left: 1em;
+  margin-right: 1em;
+  color: cadetblue;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: cursive;
+  text-transform: capitalize;
   border: none;
   border-radius: 2px;
   padding: 0.7em 1.5em;
@@ -124,14 +134,10 @@ main {
   font-weight: lighter;
 }
 
-.nav .btn:hover, .nav .btn-principal:hover {
+.navbar .btn:hover, .navbar .btn-outline-success:hover {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
-}
-
-.nav .btn-principal {
-  color: brown;
-  background-color: cornflowerblue;
+  color: matrix(brown);
 }
 
 .background--color {
@@ -364,7 +370,6 @@ iframe {
   height: 200px;
   width: 100%;
   background-image: url(img/madera2.gif);
-  background-size: contain;
   background-position: center;
   text-align: center;
   font-weight: bold;
@@ -833,6 +838,7 @@ footer a {
 }
 
 .pensalo p {
+  margin-bottom: 200px;
   -ms-grid-column: 1;
       grid-column-start: 1;
   grid-column-end: 2;
