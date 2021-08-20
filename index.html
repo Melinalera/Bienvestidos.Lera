@@ -24,13 +24,12 @@
     <meta http-equiv="cache-control" content="no-cache,no store, must-revali">
     <meta name="GOOGLEBOT" content="index,follow,all">
     <meta name="Resource-type" content="Document">
-
+   
     <link rel="stylesheet" href="estilos.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <title>BIENVESTI2</title>
   </head>
@@ -41,7 +40,7 @@
     
 <header>
  
-   <nav class="navbar navbar-expand-lg navbar-light bg-light background--color">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light background--color">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,30 +48,36 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <button class="btn btn-outline-success"><li class="nav-item">
-           <link class="active" aria-current="page" href="index.html">inicio</a>
+          <button class="btn btn-outline-success">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
           </li>
         </button>
         <button class="btn btn-outline-success">
           <li class="nav-item">
-            <a class="nav-item">
-          <li class="nav-item">
-            <a class="nav-link" href="quienessomos.html">Quienes somos</a>
-          </button>
+            <a class="nav-link" href="quienessomos.html">Quienes Somos</a>
           </li>
-          <button class="btn btn-outline-success">
+        </button>
+        <button class="btn btn-outline-success">
+          <li class="nav-item">
+            <a class="nav-link" href="nuestrosdisenadores.html">Nuestros Diseñadores</a>
+          </li>
+        </button>
+        <button class="btn">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Productos
+              Productos
             </a>
-          </button>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="index.html">Para ellas</a></li>
-              <li><a class="dropdown-item" href="quienessomos.html"></a>Para Ellos</li>
+              <li><a class="dropdown-item" href="paraellas.html">Para ellas</a></li>
+              <li><a class="dropdown-item" href="paraellos.html">Para Ellos</a></li>
+              <li><a class="dropdown-item" href="paralospeques.html">Para los peques</a></li>
+              <li><a class="dropdown-item" href="paralasmascotas.html">Para las mascotas</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="nuestrosdisenadores.html">Para los peques</a></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
             </ul>
           </li>
+        </button> 
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -84,7 +89,7 @@
 
 </header>
 
-<main class="main">
+<main>
  
     <div id="carouselExampleIndicators" class="carousel slide conteiner__fluid--background " data-bs-ride="carousel">
       
@@ -144,9 +149,9 @@
  <h2>Para Ellas</h2>
   
 <div class="contenedor">
-        <a href="paraellas.html"><img src="img/imagen-ellas-presentacion.jpg" class="itemellas img-fluid"target="_blank" alt="ropa de mujer"></a> 
-        <a href="paraellas.html"><img src="img/mujer-invierno.jpg" class= "itemellas img-fluid" target="_blank"alt="mujer-invierno"></a>
-        <a href="paraellas.html"><img src="img/mujer-invierno-2.jpg" class= "itemellas img-fluid" alt="mujer-invierno-2"></a>
+        <a href="paraellas.html"><img src="img/imagen-ellas-presentacion.jpg" class="itemEllas img-fluid"target="_blank" alt="ropa de mujer"></a> 
+        <a href="paraellas.html"><img src="img/mujer-invierno.jpg" class= "itemEllas img-fluid" target="_blank"alt="mujer-invierno"></a>
+        <a href="paraellas.html"><img src="img/mujer-invierno-2.jpg" class= "itemEllas img-fluid" alt="mujer-invierno-2"></a>
 </div>
 
   
@@ -156,21 +161,21 @@
 
   <h2>Para Ellos</h2>
 
- <div class="contenedorellos">
+ <div class="contenedorEllos">
   
             <a href="paraellos.html"><img src="img/hombre1.jpg"class="itemellos rounded-circle img-fluid" id="itemellos1" target="_blank"  alt="publicidad"></a>
-            <a href="paraellos.html"><img src="img/hombre-presntacion.jpg" class="itemellos rounded-circle img-fluid"id="itemellos2" target="_blank" alt="ropadehombre"></a>
-            <a href="paraellos.html"><img src="img/hombre-presntacion2.jpg" class= "itemellos rounded-circle img-fluid"  id="itemellos3" target="_blank"alt="ropadehombre"></a>
+            <a href="paraellos.html"><img src="img/hombre-presntacion.jpg" class="itemEllos rounded-circle img-fluid"id="itemellos2" target="_blank" alt="ropadehombre"></a>
+            <a href="paraellos.html"><img src="img/hombre-presntacion2.jpg" class= "itemEllos rounded-circle img-fluid"  id="itemellos3" target="_blank"alt="ropadehombre"></a>
 </div>
 
     
    
   <h2>Para los peques</h2>
-    <div class="contenedorpeques">
+    <div class="contenedorPeques">
     
-      <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion3.jpg " target="_blank" class="itempeques  img-fluid"></a>
-      <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion.jpg" class="itempeques img-fluid" target="_blank" alt="ropainfantil"></a>
-      <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion2.jpg" class= "itempeques img-fluid"  target="_blank"alt="ropainfantil"></a>
+      <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion3.jpg " target="_blank" class="itemPeques  img-fluid"></a>
+      <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion.jpg" class="itemPeques img-fluid" target="_blank" alt="ropainfantil"></a>
+      <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion2.jpg" class= "itemPeques img-fluid"  target="_blank"alt="ropainfantil"></a>
     </div>
       
       
@@ -178,10 +183,10 @@
      
       <div>
         <h2>Para nuestros queridos compañeros</h2>
-        <div class="contenedormascotas">
-        <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascotas.jpg" alt="ropamascotas" class="itemmascotas rounded-circle img-fluid"id="itemmascotas1"></a>
-        <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascota-presentacion2.jfif" class="itemmascotas rounded-circle img-fluid" id="itemmascotas2" target="_blank" alt="ropamascotas"></a>
-        <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascota-presentacion.jfif" class= "itemmascotas rounded-circle img-fluid" id="itemmascotas3"target="_blank"alt="ropamascotas"></a>
+        <div class="contenedorMascotas">
+        <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascotas.jpg" alt="ropamascotas" class="itemMascotas rounded-circle img-fluid"id="itemmascotas1"></a>
+        <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascota-presentacion2.jfif" class="itemMascotas rounded-circle img-fluid" id="itemmascotas2" target="_blank" alt="ropamascotas"></a>
+        <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascota-presentacion.jfif" class= "itemMascotas rounded-circle img-fluid" id="itemmascotas3"target="_blank"alt="ropamascotas"></a>
         
       </div>
      
@@ -190,10 +195,10 @@
        
   <h2> Pasarela </h2>
          
-  <div class="contenedorpasarela">
-     <a href="pasarela.html" target="_blank" alt ="pasarela de bien vestidos"><img src="img/pasarela.jpeg" class="itempasarela img-fluid" ></a>
-     <a href="pasarela.html" target="_blank" alt ="pasarela de bien vestidos"><img src="img/pasarela.jpeg" class="itempasarela img-fluid"  target="_blank" alt="ropainfantil"></a>
-    <a href="pasarela.html" target="_blank" alt ="pasarela de bien vestidos"><img src="img/pasarela3.jfif" class= "itempasarela img-fluid"  target="_blank"alt="ropainfantil"></a>
+  <div class="contenedorPasarela">
+     <a href="pasarela.html" target="_blank" alt ="pasarela de bien vestidos"><img src="img/pasarela.jpeg" class="itemPasarela img-fluid" ></a>
+     <a href="pasarela.html" target="_blank" alt ="pasarela de bien vestidos"><img src="img/pasarela.jpeg" class="itemPasarela img-fluid"  target="_blank" alt="ropainfantil"></a>
+    <a href="pasarela.html" target="_blank" alt ="pasarela de bien vestidos"><img src="img/pasarela3.jfif" class= "itemPasarela img-fluid"  target="_blank"alt="ropainfantil"></a>
   </div>
 
 
