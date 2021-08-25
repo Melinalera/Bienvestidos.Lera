@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 * {
   margin: 0%;
   padding: 0%;
@@ -6,14 +7,7 @@
           box-sizing: border-box;
 }
 
-.header {
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100%;
-}
-
 .carousel-inner {
-  margin-bottom: 90px;
   width: 100%;
 }
 
@@ -102,11 +96,12 @@
     opacity: 1;
   }
 }
-
+header{
+  position: sticky;
+}
 /*estilo nav*/
 .navbar {
   text-transform: capitalize;
-  position: -webkit-sticky;
   position: sticky;
 }
 
@@ -120,7 +115,6 @@
   text-transform: capitalize;
   border: none;
   border-radius: 2px;
-  padding: 0.7em 1.5em;
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: lighter;
@@ -166,7 +160,7 @@ iframe {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 400px;
+  height: 450px;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -199,7 +193,7 @@ iframe {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 400px;
+  height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -241,7 +235,7 @@ iframe {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 400px;
+  height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -255,7 +249,7 @@ iframe {
 
 .contenedorPeques .itemPeques {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background-size: cover;
   padding: 20px;
   -webkit-box-pack: justify;
@@ -282,7 +276,7 @@ iframe {
   display: -ms-grid;
   display: grid;
   width: 100%;
-  height: 400px;
+  height: 450px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -291,7 +285,7 @@ iframe {
           align-items: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
-  background-color: cadetblue;
+  background-color:darkslategrey;
 }
 
 .contenedorMascotas .itemMascotas {
@@ -319,46 +313,6 @@ iframe {
           filter: sepia(2);
 }
 
-.contenedorPasarela {
-  display: -ms-grid;
-  display: grid;
-  width: 100%;
-  height: 400px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
-  background-color: burlywood;
-}
-
-.contenedorPasarela .itemPasarela {
-  width: 100%;
-  height: 400px;
-  background-size: cover;
-  padding: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  line-height: 400px;
-  -webkit-box-shadow: 5px 5px 5px 5px;
-          box-shadow: 5px 5px 5px 5px;
-}
-
-.itemPasarela:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: 08s;
-  transition: 08s;
-  -webkit-filter: sepia(2);
-          filter: sepia(2);
-}
 
 .subtitulo {
   color: maroon;
@@ -370,7 +324,7 @@ iframe {
   font-weight: bold;
   margin-bottom: 50px;
   font-size: 30px;
-  font-family: 'Benne', serif;
+  font-family: 'Caveat', cursive;
   text-transform: capitalize;
   line-height: 150%;
   letter-spacing: normal;
@@ -386,27 +340,29 @@ h2 {
   height: 200px;
   width: 100%;
   background-color: cadetblue;
+  align-items: center;
   text-align: center;
   font-weight: bold;
   margin-bottom: 50px;
   font-size: 30px;
-  font-family: 'Benne', serif;
+  font-family: 'Caveat', cursive;
   text-transform: capitalize;
   line-height: 150%;
   letter-spacing: normal;
   word-spacing: 1px;
   text-decoration: none;
   padding-left: 10px;
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 p {
   text-align: center;
   font-weight: bold;
+  background-color: beige;
   font-size: 16px;
-  font-family: 'Benne', serif;
-  text-transform: capitalize;
+  font-family:'WindSong', cursive;
+  text-transform:uppercase;
   line-height: 150%;
   letter-spacing: normal;
   word-spacing: 1px;
@@ -483,23 +439,6 @@ p {
       grid-template-rows: 1fr 1fr 1fr;
   -webkit-box-shadow: 5px 5px 5px 5px;
           box-shadow: 5px 5px 5px 5px;
-}
-
-/*comienzo A estIlar seccion quienes somos*/
-.box__uno {
-  width: 45%;
-  height: 50%;
-  background-color: brown;
-  border-radius: 4px;
-  float: right;
-}
-
-.box__dos {
-  width: 45%;
-  height: 50%;
-  background-color: aquamarine;
-  border-radius: 4px;
-  float: left;
 }
 
 /*finalizo de estIlar seccion quienes somos*/
@@ -779,7 +718,17 @@ p {
             transform: rotate(360deg);
   }
 }
+.contacto a{
+  width: 100%;
+  height: 100px;
+  margin-bottom: 100px;
+  background-position: center;
+  background-color:beige ;
+  margin-left: 22%;
+  font-weight: 30px;
+  font-size: medium;
 
+}
 footer {
   background-image: url(img/madera2.gif);
   text-align: center;
@@ -888,6 +837,93 @@ footer a {
 
 /*finalizo estilo pagina 404*/
 /*comienzo animacion nuestros disenadores*/
+.disenadores {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 300px;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  display: grid;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+.disenadores .box__uno {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 400px;
+  -webkit-box-shadow: 5px 5px 5px 5px;
+          box-shadow: 5px 5px 5px 5px;
+  background-color: brown;
+  border-radius: 4px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.disenadores .box__dos {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  padding: 20px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 400px;
+  -webkit-box-shadow: 5px 5px 5px 5px;
+          box-shadow: 5px 5px 5px 5px;
+  background-color: cornflowerblue;
+  border-radius: 4px;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.disenadores h1 {
+  color: darkgoldenrod;
+  font-family: 'WindSong', cursive;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 5px 5px 5px cornflowerblue;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: alternate;
+          animation-duration: alternate;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .name {
   color: #aaa;
   font-size: 12px;
@@ -918,8 +954,11 @@ footer a {
 }
 
 .perspective {
+  width: 100%;
   perspective: 1200px;
   -webkit-perspective: 1200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .tardis-wrap {

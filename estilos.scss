@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 * {
     margin: 0%;
@@ -7,15 +8,13 @@
 
 }
 
-.header {
-    position: sticky;
-    width: 100%;
-}
 
 //estilo carousel/
 .carousel-inner {
-    margin-bottom: 90px;
     width: 100%;
+
+
+
 
     .car__1 {
         width: 100%;
@@ -91,9 +90,9 @@
 /*estilo nav*/
 .navbar {
     text-transform: capitalize;
-    position: sticky;
+    position:sticky;
 
-    .btn {
+    a {
         margin-left: 1em;
         margin-right: 1em;
         color: cadetblue;
@@ -103,7 +102,6 @@
         text-transform: capitalize;
         border: none;
         border-radius: 2px;
-        padding: 0.7em 1.5em;
         cursor: pointer;
         font-size: 1.5rem;
         font-weight: lighter;
@@ -172,7 +170,7 @@ iframe {
 }
 
 .contenedor {
-    @include contenedor(100%, 400px, space-evenly, center, 1fr 1fr 1fr);
+    @include contenedor(100%, 450px, space-evenly, center, 1fr 1fr 1fr);
     background-color: darkgoldenrod;
 
     .itemEllas {
@@ -289,9 +287,9 @@ h2 {
     background-color: cadetblue;
     text-align: center;
     font-weight: bold;
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
     font-size: 30px;
-    font-family: 'Benne', serif;
+    font-family: 'Shadows Into Light', cursive;
     text-transform: capitalize;
     line-height: 150%;
     letter-spacing: normal;
@@ -304,10 +302,11 @@ h2 {
 }
 
 p {
+    width: 80%;
     text-align: center;
     font-weight: bold;
     font-size: 16px;
-    font-family: 'Benne', serif;
+    font-family: 'Caveat', cursive;
     text-transform: capitalize;
     line-height: 150%;
     letter-spacing: normal;
@@ -365,26 +364,6 @@ p {
 
 
 
-
-/*comienzo A estIlar seccion quienes somos*/
-
-.box__uno {
-    width: 45%;
-    height: 50%;
-    background-color: brown;
-    border-radius: 4px;
-    float: right;
-}
-
-.box__dos {
-    width: 45%;
-    height: 50%;
-    background-color: aquamarine;
-    border-radius: 4px;
-    float: left;
-}
-
-/*finalizo de estIlar seccion quienes somos*/
 /*comienzo a estilar aanimaciones de descuento*/
 .circle {
     height: 300px;
@@ -533,12 +512,13 @@ p {
         transform: rotate(360deg);
     }
 }
-
+//finalizo animacion de descuento//
 //comienzo a estilar footer//
 footer {
 
     background-image: url(img/madera2.gif);
-    text-align: center;
+    background-position: bottom !important;
+    margin-top: 100px;
 
     a {
         text-align: center;
@@ -546,9 +526,7 @@ footer {
         font-size: 16px;
         font-family: Kirang Haerang;
         text-transform: capitalize;
-        line-height: 150%;
         letter-spacing: 1em;
-        ;
         word-spacing: 1px;
         text-decoration: none
     }
@@ -566,7 +544,6 @@ footer {
     color: #36A0FF;
 }
 
-/*finalizo de animaciones de descuento*/
 /*estilo pagina 404*/
 .Error {
     background-color: darkgoldenrod;
@@ -586,12 +563,12 @@ footer {
         color: darkblue
     }
 }
-
+/*finalizo estilo pagina 404*/
+//estilo seccion de trabajo//
 .accordion-flushbackground-color {
     background-image: url(img/madera2.gif);
 }
 
-//estilo seccion de trabajo//
 @mixin trabajo ($ancho, $height, $justify, ) {
     display: grid;
     width: $ancho;
@@ -602,7 +579,8 @@ footer {
 }
 
 .trabajo {
-    @include trabajo(100%, 400px, space-evenly)
+    @include trabajo(100%, 400px, space-evenly);
+   
 }
 
 .pensalo {
@@ -635,10 +613,85 @@ footer {
     font-family: cursive;
     text-transform: capitalize;
 }
+//comienzo  estiar pagina de trabajo//   
+.imgn{
+    @include trabajo(100%,400px ,space-evenly );
+    display: grid;
+    width: 100%;
+    margin-bottom: 100px !important;
+    margin-top: 100px;
+    position: relative;
+    background-position: center;  
+    background-size: cover;
+    order: 1;
+    animation-duration: 3s;
+    animation-name: dezlis;
 
-/*finalizo estilo pagina 404*/
-/*comienzo animacion nuestros disenadores*/
+    @keyframes dezlis {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
 
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    } 
+   
+
+}
+//comienzo a estlar pagina disenadores//
+.disenadores{
+    @include contenedor(100%, 300px, space-evenly, center, 1fr 1fr);
+    display: grid;
+    grid-template-rows: 1fr;
+    margin-top: 100px;
+    margin-bottom: 100px;
+.box__uno {
+    @include item(100%, 400px, cover, 20px, space-between, center, 400px, 5px 5px 5px);
+    background-color: brown;
+    border-radius: 4px;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    
+   }
+
+.box__dos {
+    @include item(100%, 400px, cover, 20px, space-between, center, 400px, 5px 5px 5px 5px);
+    background-color:cornflowerblue;
+    border-radius: 4px; 
+    grid-row-start: 1;
+    grid-row-end: 2; 
+  }
+}
+h1{
+    
+    color: darkgoldenrod;
+    font-family: 'WindSong', cursive;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 5px 5px cornflowerblue;
+    animation-duration: 3s;
+    animation-name: aparecer;
+    animation-delay: 3s;
+    animation-duration: alternate;
+    animation-iteration-count: infinite;
+ 
+
+  @keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+ }
+
+}
+
+//animacion de disenadores//
 .name {
     color: #aaa;
     font-size: 12px;
@@ -667,12 +720,29 @@ footer {
 .right {
     float: right;
 }
-
-
+.bg-image{
+    background: url(../img/bg_xl.png);
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    height: 400px;
+}
+.overlay{
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $c-primario-LO;
+    margin: auto;
+}
 
 .perspective {
+    width: 100%;
     perspective: 1200px;
     -webkit-perspective: 1200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .tardis-wrap {
@@ -1098,7 +1168,8 @@ footer {
     margin-left: 3px;
     margin-right: 1px;
 }
-
+//finalizo animacion disendores//
+//comienzo mediaquery//
 @media only screen and (min-width: 360px) {
     body {
         background-color: cadetblue
@@ -1112,10 +1183,6 @@ footer {
 
     .titulo {
         font-size: 2em;
-    }
-
-    iframe {
-        overflow: hidden;
     }
 
 }
@@ -1148,5 +1215,4 @@ footer {
         grid-template-rows: 1fr 1fr;
 
 
-    }
-}
+    }   
