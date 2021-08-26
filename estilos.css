@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=WindSong&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
 * {
   margin: 0%;
   padding: 0%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+body{
+  background-color: beige;
+}
+/*estilo carusel*/
 .carousel-inner {
   width: 100%;
 }
@@ -56,6 +61,7 @@
 }
 
 /*finalizo de estilar carusel */
+/*titulo*/
 .titulo {
   width: 100%;
   color: orangered;
@@ -231,6 +237,7 @@ iframe {
 }
 
 /*finalizo contenedor ellos*/
+/*comienzo contenedor peques*/
 .contenedorPeques {
   display: -ms-grid;
   display: grid;
@@ -271,7 +278,7 @@ iframe {
   -webkit-filter: sepia(2);
           filter: sepia(2);
 }
-
+/*comienzo contenedor mascotas*/
 .contenedorMascotas {
   display: -ms-grid;
   display: grid;
@@ -313,7 +320,7 @@ iframe {
           filter: sepia(2);
 }
 
-
+/*subtitulo*/
 .subtitulo {
   color: maroon;
   height: 200px;
@@ -355,13 +362,13 @@ h2 {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
+/*estilo parrafo*/
 p {
   text-align: center;
   font-weight: bold;
   background-color: beige;
   font-size: 16px;
-  font-family:'WindSong', cursive;
+  font-family: 'Satisfy', cursive;
   text-transform:uppercase;
   line-height: 150%;
   letter-spacing: normal;
@@ -398,7 +405,7 @@ p {
     width: 100%;
   }
 }
-
+/*finalizo parrafo*/
 /*comienzo a estilar paginas secundarias*/
 .fondo {
   height: auto;
@@ -441,7 +448,6 @@ p {
           box-shadow: 5px 5px 5px 5px;
 }
 
-/*finalizo de estIlar seccion quienes somos*/
 /*comienzo a estilar aanimaciones de descuento*/
 .circle {
   height: 300px;
@@ -649,7 +655,8 @@ p {
             box-shadow: 0px 10px 10px 10px #000;
   }
 }
-
+/*finalizo animcion de descuento*/
+/*animacion hover*/
 .itemmujer:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
@@ -658,7 +665,7 @@ p {
   -webkit-filter: sepia(2);
           filter: sepia(2);
 }
-
+/*animacin de descuento 2*/
 .circle2 {
   height: 300px;
   width: 300px;
@@ -718,6 +725,8 @@ p {
             transform: rotate(360deg);
   }
 }
+/*finalizo animacion de descuento 2*/
+/*seccion de redes sociales*/
 .contacto a{
   width: 100%;
   height: 100px;
@@ -729,6 +738,7 @@ p {
   font-size: medium;
 
 }
+/*comienzo a estilar footer*/
 footer {
   background-image: url(img/madera2.gif);
   text-align: center;
@@ -758,7 +768,7 @@ footer a {
   color: #36A0FF;
 }
 
-/*finalizo de animaciones de descuento*/
+
 /*estilo pagina 404*/
 .Error {
   background-color: darkgoldenrod;
@@ -777,7 +787,7 @@ footer a {
   cursor: pointer;
   color: darkblue;
 }
-
+/*seccion unite al equipo*/
 .accordion-flushbackground-color {
   background-image: url(img/madera2.gif);
 }
@@ -835,8 +845,8 @@ footer a {
   text-transform: capitalize;
 }
 
-/*finalizo estilo pagina 404*/
-/*comienzo animacion nuestros disenadores*/
+/*finalizo unite al equipo*/
+/*comienzo seccion disenadores*/
 .disenadores {
   display: -ms-grid;
   display: grid;
@@ -923,7 +933,7 @@ footer a {
     opacity: 1;
   }
 }
-
+/*animacion vestuario de nuestros disenadores*/
 .name {
   color: #aaa;
   font-size: 12px;
@@ -1378,11 +1388,13 @@ footer a {
   margin-left: 3px;
   margin-right: 1px;
 }
+/*finalizo animaciom de nuestros disenadores*/
 
 @media only screen and (min-width: 360px) {
   body {
     background-color: cadetblue;
   }
+ 
   .fondo {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1394,6 +1406,7 @@ footer a {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+ 
   .titulo {
     font-size: 2em;
   }

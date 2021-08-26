@@ -30,7 +30,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
 <body>
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-light background--color">
@@ -56,21 +57,11 @@
                 <a class="nav-link" href="nuestrosdisenadores.html">Nuestros Diseñadores</a>
               </li>
             </button>
-            <button class="btn">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="paraellas.html">Para ellas</a></li>
-                  <li><a class="dropdown-item" href="paraellos.html">Para Ellos</a></li>
-                  <li><a class="dropdown-item" href="paralospeques.html">Para los peques</a></li>
-                  <li><a class="dropdown-item" href="paralasmascotas.html">Para las mascotas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <button class="btn btn-outline-success">
+              <li class="nav-item">
+                <a class="nav-link" href="trabaja.html">Unite a nuestro Equipo</a>
               </li>
-            </button> 
+            </button>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Busqueda</button>
@@ -83,8 +74,8 @@
 
 <div class="container-fluid">
   <div class="row">
-    <div class="col-xs-6 col-lg-6">
-      <img src="img/quienes (3).gif" alt="quienessomos">
+    <div class="col-xs-6 col-lg-6" data-aos="flip-up">
+      <img src="img/quienes (3).gif"  alt="quienessomos">
     </div>
 
     <div class="col-xs-6 col-lg-6">
@@ -100,14 +91,16 @@
     <footer link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
-        <a href=""> Trabaja en BIENVESTIDOS</a><br>
-    
+       
         <a href=""> Condiciones de uso</a><br>
     
        <a href=""> Aviso de publicidad</a><br>
     
     
     </footer>
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>  
 </body>
 </html>

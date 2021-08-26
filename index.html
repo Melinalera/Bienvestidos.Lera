@@ -33,6 +33,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
+
     <title>BIENVESTI2</title>
   </head>
 <body>
@@ -62,21 +65,11 @@
             <a class="nav-link" href="nuestrosdisenadores.html">Nuestros Diseñadores</a>
           </li>
         </button>
-        <button class="btn">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Productos
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="paraellas.html">Para ellas</a></li>
-              <li><a class="dropdown-item" href="paraellos.html">Para Ellos</a></li>
-              <li><a class="dropdown-item" href="paralospeques.html">Para los peques</a></li>
-              <li><a class="dropdown-item" href="paralasmascotas.html">Para las mascotas</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
+        <button class="btn btn-outline-success">
+          <li class="nav-item">
+            <a class="nav-link" href="trabaja.html">Unite a nuestro Equipo</a>
           </li>
-        </button> 
+        </button>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Busqueda</button>
@@ -89,20 +82,20 @@
 
 <main>
  
-    <div id="carouselExampleIndicators" class="carousel slide conteiner__fluid--background " data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide conteiner__fluid--background"  data-bs-ride="carousel">
       
       <div class="carousel-inner">
-        <div class="color-teal">_</div>
+        <div class="color-teal">.</div>
         <div class="carousel-item active  car__1 color-teal">
           <img src="img/presntacion-pequesopcional.jpg" class="d-block w-100" widht="100" height="600" alt="...">
-         <div class="color-teal">_</div>
+         <div class="color-teal">.</div>
         </div>
-        <div class="color-brown">_</div>
+        <div class="color-brown">.</div>
         <div class="carousel-item car__2 color-brown">
           <img src="img/buzo-mascota2.jfif" class="d-block w-100" widht="100" height="600" alt="...">
-          <div class="color-brown">_</div>
+          <div class="color-brown">.</div>
         </div>
-        <div class="color-yellow">_</div>
+        <div class="color-yellow">.</div>
         <div class="carousel-item car__3 color-yellow">
           <img src="img/campera1.jpeg" class="d-block w-100" widht="100" height="600" alt="...">
           <div class="color-yellow">_</div>
@@ -134,19 +127,17 @@
     
   
 <div class="div__p--background">
-    <p class="parrafo"  link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet"><i> Bienvestidos es una empresa de Nacionalidad Argentina que Se encarga de la indumentaria de tanto tuya como la de tus seres queridos.Hace 30 años 
+    <p class="parrafo">Bienvestidos es una empresa de Nacionalidad Argentina que Se encarga de la indumentaria de tanto tuya como la de tus seres queridos.Hace 30 años 
         priorizamos muy buena calidad,el buen gusto,cuidamos de tu bolsillo, pero llendo a la vanguardia.
         Actualmente como tambien nos interesa tu salud y la de tus seres queridos estamos procurando que no salgas de casa 
-      por eso te ofrecemos que cualquier compra que hagas online, te la llevamos a tu casa sin costo alguno.Cualquier inconveniente no dudes en contactarnos que estamos a tu servicio. </i> 
+      por eso te ofrecemos que cualquier compra que hagas online, te la llevamos a tu casa sin costo alguno.Cualquier inconveniente no dudes en contactarnos que estamos a tu servicio. 
     </p>
 </div>
   
 
  <h2>Para Ellas</h2>
   
-<div class="contenedor">
+<div class="contenedor" data-aos="zoom-in-right">
         <a href="paraellas.html"><img src="img/imagen-ellas-presentacion.jpg" class="itemEllas img-fluid"target="_blank" alt="ropa de mujer"></a> 
         <a href="paraellas.html"><img src="img/mujer-invierno.jpg" class= "itemEllas img-fluid" target="_blank"alt="mujer-invierno"></a>
         <a href="paraellas.html"><img src="img/mujer-invierno-2.jpg" class= "itemEllas img-fluid" alt="mujer-invierno-2"></a>
@@ -159,9 +150,11 @@
 
   <h2>Para Ellos</h2>
 
- <div class="contenedorEllos">
+ <div class="contenedorEllos" data-aos="flip-left"
+ data-aos-easing="ease-out-cubic"
+ data-aos-duration="2000">
   
-            <a href="paraellos.html"><img src="img/hombre1.jpg"class="itemellos rounded-circle img-fluid" id="itemellos1" target="_blank"  alt="publicidad"></a>
+            <a href="paraellos.html"><img src="img/hombre1.jpg"class="itemellos rounded-circle img-fluid" class="contenedorEllos" id="itemellos1" target="_blank"  alt="publicidad"></a>
             <a href="paraellos.html"><img src="img/hombre-presntacion.jpg" class="itemEllos rounded-circle img-fluid"id="itemellos2" target="_blank" alt="ropadehombre"></a>
             <a href="paraellos.html"><img src="img/hombre-presntacion2.jpg" class= "itemEllos rounded-circle img-fluid"  id="itemellos3" target="_blank"alt="ropadehombre"></a>
 </div>
@@ -169,7 +162,7 @@
     
    
   <h2>Para los peques</h2>
-    <div class="contenedorPeques">
+    <div class="contenedorPeques" data-aos="zoom-in-right">
     
       <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion3.jpg " target="_blank" class="itemPeques  img-fluid"></a>
       <a href="paralospeques.html" alt="ropainfantil"><img src="img/peques-presentacion.jpg" class="itemPeques img-fluid" target="_blank" alt="ropainfantil"></a>
@@ -179,9 +172,10 @@
       
 
      
-      <div>
-        <h2>Para nuestros queridos compañeros</h2>
-        <div class="contenedorMascotas">
+  <h2>Para nuestros queridos compañeros</h2>
+        <div class="contenedorMascotas"  data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="2000">
         <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascotas.jpg" alt="ropamascotas" class="itemMascotas rounded-circle img-fluid"id="itemmascotas1"></a>
         <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascota-presentacion2.jfif" class="itemMascotas rounded-circle img-fluid" id="itemmascotas2" target="_blank" alt="ropamascotas"></a>
         <a href="paralasmascotas.html" alt="ropaparamascotas"><img src="img/mascota-presentacion.jfif" class= "itemMascotas rounded-circle img-fluid" id="itemmascotas3"target="_blank"alt="ropamascotas"></a>
@@ -206,7 +200,6 @@
     <footer link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
-        <a href="trabaja.html"> Trabaja en BIENVESTIDOS</a><br>
     
         <a href=""> Condiciones de uso</a><br>
 
@@ -214,5 +207,10 @@
     
 
     </footer>   
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 </html>

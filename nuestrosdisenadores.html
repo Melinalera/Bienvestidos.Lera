@@ -30,6 +30,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -56,22 +57,11 @@
                 <a class="nav-link" href="nuestrosdisenadores.html">Nuestros Diseñadores</a>
               </li>
             </button>
-            <button class="btn">
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Productos
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="paraellas.html">Para ellas</a></li>
-                  <li><a class="dropdown-item" href="paraellos.html">Para Ellos</a></li>
-                  <li><a class="dropdown-item" href="paralospeques.html">Para los peques</a></li>
-                  <li><a class="dropdown-item" href="paralasmascotas.html">Para las mascotas</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+            <button class="btn btn-outline-success">
+              <li class="nav-item">
+                <a class="nav-link" href="trabaja.html">Unite a nuestro Equipo</a>
               </li>
-            </button> 
-            </ul>
+            </button>
             <form class="d-flex">
               <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
               <button class="btn btn-outline-success" type="submit">Busqueda</button>
@@ -82,6 +72,7 @@
     
     </header>
   <main> 
+    <!---comienza animacion-->
        <div class="perspective">
           
       <div class="tardis-wrap">
@@ -250,37 +241,48 @@
       </div>
     </div>
     </div>
+    <!--fin de animacion-->
     <h1 class="titulo">Nuestros diseñadores</h1> 
-
-    <div class="disenadores">
-       <div class="box__uno">
+    <!---disenador caja 1-->
+  <div class="disenadores" >
+      <div class="box__uno" data-aos="fade-right"
+       data-aos-offset="300"
+       data-aos-easing="ease-in-sine">
         <h1>cosme fulanito</h1>
-        <img src="img/disenador1.jpg" class="box__uno">
+        <img src="img/disenador1.jpg" class="box__uno itemmujer">
         <p>Cosme fulanito deja la maquina de coser solo cuando duerme</p>
-       </div>
-      <div class="box__dos">
-      <h1>mariquita</h1>
-      <img src="img/disenador3.jpg" img-fluid class="box__dos">
-      <p>mariquita trabaja incansablemente practicamente desde que naciò para VESTIR A TU FAMILIA!</p>
       </div>
-    </div><br><br><br><br><br><br><br><br><br><br><br><br>
-
-  <div class="imgn">
+     <!---disenador caja 1-->
+    <div class="box__dos"  data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500">
+      <h1>mariquita</h1>
+      <img src="img/disenador3.jpg" img-fluid class="box__dos itemmujer">
+      <p>mariquita trabaja incansablemente practicamente desde que naciò para VESTIR A TU FAMILIA!</p>
+    </div>
+  </div><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!---disenador imagen-->
+  <div class="imgn" data-aos="zoom-in-up">
     <p>Igual los queremos</p>
     <img src="disenadores1 (1).gif" img-fluid class="imgn" alt="">
   </div>
 
     
-  </main>
-      <footer link rel="preconnect" href="https://fonts.googleapis.com">
+</main>
+    <footer link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap" rel="stylesheet">
-        <a href="trabaja.html"> Trabaja en BIENVESTIDOS</a><br>
-    
+      
         <a href=""> Condiciones de uso</a><br>
 
        <a href=""> Aviso de publicidad</a><br>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  
  </body>
 </html>
 
